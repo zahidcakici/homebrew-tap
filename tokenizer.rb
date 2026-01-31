@@ -5,21 +5,21 @@
 class Tokenizer < Formula
   desc "A fast CLI tool to count tokens for various Large Language Model (LLM) providers."
   homepage "https://github.com/zahidcakici/tokenizer-cli"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zahidcakici/tokenizer-cli/releases/download/v0.1.5/tokenizer-cli_0.1.5_darwin_amd64.tar.gz"
-      sha256 "26ad7dc33502ae5e06945aa8656a14f830c83f917f48cb5bc9eee9f35fa7ebdd"
+      url "https://github.com/zahidcakici/tokenizer-cli/releases/download/v0.1.6/tokenizer-cli_0.1.6_darwin_amd64.tar.gz"
+      sha256 "da4ebd7af4ea07843eb943512f0fd9edbf0bc040ea7c30f07ec8f04b0a5a02dd"
 
       def install
         bin.install "tokenizer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zahidcakici/tokenizer-cli/releases/download/v0.1.5/tokenizer-cli_0.1.5_darwin_arm64.tar.gz"
-      sha256 "9564a265c570f8bfcf2f3bd904073f578d2c31326f26c19215916c86578cecfb"
+      url "https://github.com/zahidcakici/tokenizer-cli/releases/download/v0.1.6/tokenizer-cli_0.1.6_darwin_arm64.tar.gz"
+      sha256 "6c71c86fff842f95d43e7f7ca468819cd240e907fea1a061fdbe025dd677b790"
 
       def install
         bin.install "tokenizer"
@@ -29,15 +29,15 @@ class Tokenizer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zahidcakici/tokenizer-cli/releases/download/v0.1.5/tokenizer-cli_0.1.5_linux_amd64.tar.gz"
-      sha256 "580468a6ec40541a5d5c81edbdf6a8cd7bb83515edba8a8fb8c69c079db3f00b"
+      url "https://github.com/zahidcakici/tokenizer-cli/releases/download/v0.1.6/tokenizer-cli_0.1.6_linux_amd64.tar.gz"
+      sha256 "a2294fdf6c13f05a53c83926caa53d6ac521ee3f16d53b982afd52e9207f1cf5"
       def install
         bin.install "tokenizer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zahidcakici/tokenizer-cli/releases/download/v0.1.5/tokenizer-cli_0.1.5_linux_arm64.tar.gz"
-      sha256 "a51eac4bd791471c838de843456f3a4391dfc1a5a8a2cbd3b24a65c519c5e377"
+      url "https://github.com/zahidcakici/tokenizer-cli/releases/download/v0.1.6/tokenizer-cli_0.1.6_linux_arm64.tar.gz"
+      sha256 "60d33eabf84482b310bdd4154faeb753eb18180bccae42057917e6322eaa58a6"
       def install
         bin.install "tokenizer"
       end
